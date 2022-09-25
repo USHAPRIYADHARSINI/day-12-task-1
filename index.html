@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Day 12 task</h1>
+    <section class="form">
+    <h2>Form</h2>
+    <div>
+    <h4><label for="firstname">Firstname</label></h4>
+    <input type="text" id="firstname" name="firstname" maxlength="18"/>
+    <label class="compulsory" name="compulsory">This field is complusory*</label>
+    </div>
+    <div>
+    <h4><label for="lastname">Lastname</label></h4>
+    <input type="text" id="lastname" name="lastname"/>
+    <label class="compulsory" name="compulsory">This field is complusory*</label>
+    </div>
+    <div>
+    <h4><label for="address">Address</label></h4>
+    <input type="text" id="address" name="address" multiline="true"/>
+    <label class="compulsory" name="compulsory">This field is complusory*</label>
+    </div>
+    <div>
+    <h4><label for="pincode">Pincode</label></h4>
+    <input type="number" maxlength="6" id="pincode" name="pincode" />
+    <label class="compulsory" name="compulsory">This field is complusory*</label>
+    </div>
+    <div>
+    <h4><div><label for="gender">Gender </label></div></h4>
+    <label><input type="radio" class="gender" onclick="func()" name="gender" id="male" value="male"/>Male</label>
+    <label><input type="radio" class="gender" onclick="func()" name="gender" id="female" value="female"/>female</label>
+    </div>
+    <label class="compulsory" name="compulsory">This field is complusory*</label>
+    </div>
+    <div>
+    <h4><label for="favfood" id="favfood">Fav food :</label></h4>
+    <div class="favfood">
+    <label><input type="checkbox" class="checkbox" name="favfood" onclick="funcfavfood()" value="Idly Sambar">Idly Sambar</label>
+    <label><input type="checkbox" class="checkbox" name="favfood" onclick="funcfavfood()" value="Dosa">Dosa</label>
+    <label><input type="checkbox" class="checkbox" name="favfood" onclick="funcfavfood()" value="Full Meals">Full meals</label>
+    <label><input type="checkbox" class="checkbox" name="favfood" onclick="funcfavfood()" value="Adai">Adai</label>
+    <label><input type="checkbox" class="checkbox" name="favfood" onclick="funcfavfood()" value="Meen Varuval">Meen varuval</label>
+    </div>
+    <label class="compulsory" name="compulsory">Select atleast 1*</label>
+    </div>
+    <div class="selectbox">
+    <h4><label for="state">State</label></h4>
+    <select id="state">
+        <option value="TN">Tamilnadu</option>
+        <option value="KL">Kerala</option>
+        <option value="KR">Karnataka</option>
+        <option value="AN">Andrapradesh</option>
+        <option value="TA">Telangana</option>
+        <option value="O">others</option>
+    </select><label class="compulsory" name="compulsory">This field is complusory*</label>
+    </div>
+    <div class="selectbox">
+    <h4><label for="country">Country</label></h4>
+    <select id="country">
+        <option value="IND">India</option>
+        <option value="PAK">Pakistan</option>
+        <option value="MYR">Myanmar</option>
+        <option value="SRL">Srilanka</option>
+        <option value="TBT">Tibet</option>
+        <option value="OTH">others</option>
+    </select><label class="compulsory" name="compulsory">This field is complusory*</label>
+    </div>
+    <div>
+    <button onclick="addrow()">Submit</button>
+    </div>
+    </section>
+    <section class="table">
+        <h2>Uploaded data</h2>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Fav food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
